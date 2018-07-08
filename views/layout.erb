@@ -3,10 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title><%= @title || "Sample Sinatra App" %></title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/site.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   </head>
   <body>
-    <%= erb :navigation %>
-    <%= yield %>
+    <a href="/" class="header-logo">
+      <img src="images/logo_b.png" />
+    </a>
+    <div class="container">
+      <%= erb :navigation %>
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
