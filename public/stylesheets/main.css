@@ -1,6 +1,6 @@
 html {
-  background: #a5c9e5; 
-  background: radial-gradient(ellipse at center, #a5c9e5 0%,#7292b0 100%); 
+  background: #a5c9e5;
+  background: radial-gradient(ellipse at center, #a5c9e5 0%,#7292b0 100%);
 }
 body {
   align-items: center;
@@ -66,6 +66,12 @@ p {
 .sator-square {
   display: block;
   margin-top: 3em;
+}
+.sator-square img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 .form-submit {
   background-color: #7292b0;
