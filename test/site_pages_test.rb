@@ -1,11 +1,11 @@
 require_relative 'test_helper'
 
 class PalindromeAppTest < Minitest::Test
-  # include Rack::Test::Methods
+  include Rack::Test::Methods
 
-  # def app
-  #   Sinatra::Application
-  # end
+  def app
+    Sinatra::Application
+  end
 
   def setup
     @base_title = "Learn Enough Ruby Sample App"
