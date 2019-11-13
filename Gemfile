@@ -9,5 +9,5 @@ group :test do
   gem 'minitest-reporters', '1.2.0'
   gem 'rack-test',          '1.0.0'
   gem 'rake',               '12.3.1'
-  gem 'nokogiri',           '1.8.4'
+  gem 'nokogiri',           '1.8.5'
 end
