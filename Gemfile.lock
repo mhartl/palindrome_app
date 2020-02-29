@@ -23,7 +23,7 @@ GEM
       rack
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
-    rake (12.3.1)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -46,7 +46,7 @@ DEPENDENCIES
   minitest-reporters (= 1.2.0)
   nokogiri (= 1.8.5)
   rack-test (= 1.0.0)
-  rake (= 12.3.1)
+  rake (= 12.3.3)
   rerun (= 0.13.0)
   sinatra (= 2.0.3)
 
