@@ -1,27 +1,25 @@
 require_relative 'test_helper'
 
-class MyAppTest < Minitest::Test
+class PalindromeAppTest < Minitest::Test
   include Rack::Test::Methods
 
   def app
     Sinatra::Application
   end
 
-  def test_palindrome_page
+  def test_form_presence
     get '/palindrome'
-    assert last_response.ok?
+    assert doc(last_response).at_css('form')
   end
 
   def test_non_palindrome_submission
-    non_palindrome = "Not a palindrome"
-    post '/check', phrase: non_palindrome
-    assert last_response.body.include?('isn\'t a palindrome')
+    post '/check', phrase: "Not a palindrome"
+    assert_includes doc(last_response).at_css('p').text, "isn't a palindrome"
+    assert doc(last_response).at_css('form')
   end
 
-
   def test_palindrome_submission
-    palindrome = "Able was I, ere I saw Elba."
-    post '/check', phrase: palindrome
-    assert last_response.body.include?('is a palindrome')
+    post '/check', phrase: "Able was I, ere I saw Elba."
+    assert_includes doc(last_response).at_css('p').text, "is a palindrome"
   end
 end
