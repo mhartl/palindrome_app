@@ -43,6 +43,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -54,6 +55,9 @@ DEPENDENCIES
   rake (= 13.0.6)
   rerun (= 0.13.1)
   sinatra (= 2.2.0)
+
+RUBY VERSION
+   ruby 3.1.1p18
 
 BUNDLED WITH
    2.3.10
