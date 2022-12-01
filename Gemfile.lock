@@ -14,7 +14,7 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    mustermann (1.1.1)
+    mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-darwin)
@@ -24,8 +24,8 @@ GEM
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3)
-    rack-protection (2.2.0)
+    rack (2.2.4)
+    rack-protection (2.2.3)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -37,12 +37,12 @@ GEM
       listen (~> 3.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
-    sinatra (2.2.0)
-      mustermann (~> 1.0)
+    sinatra (2.2.3)
+      mustermann (~> 2.0)
       rack (~> 2.2)
-      rack-protection (= 2.2.0)
+      rack-protection (= 2.2.3)
       tilt (~> 2.0)
-    tilt (2.0.10)
+    tilt (2.0.11)
 
 PLATFORMS
   x86_64-darwin-19
@@ -58,7 +58,7 @@ DEPENDENCIES
   rack-test (= 1.1.0)
   rake (= 13.0.6)
   rerun (= 0.13.1)
-  sinatra (= 2.2.0)
+  sinatra (= 2.2.3)
 
 RUBY VERSION
    ruby 3.1.1p18
